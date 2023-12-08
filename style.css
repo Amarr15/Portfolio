@@ -550,7 +550,36 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-
+:root{
+    --background-color:#fff;
+    --text-color:#000;
+    --title-color:#000;
+}
+body{
+    background: var(--background-color);
+    color:var(--text-color);
+    transition: background 0.8s, color 0.8s;
+}
+.toggle-btn{
+    background:crimson;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
+}
+.dark-theme{
+    --background-color:#000;
+    --text-color:#fff;
+    --title-color:#fff;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {
